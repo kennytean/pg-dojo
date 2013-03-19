@@ -34,12 +34,12 @@ class CalculatorTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($expected, $actual);
     }
 
-    public function testAddition_givenOneAndTwo_expectedReturnThree()
+    public function testAdditionTwoNumbers()
     {
-        $this->calculator->addition(1);
-        $this->calculator->addition(2);
+        $this->calculator->addition(4);
+        $this->calculator->addition(6);
 
-        $expected = 3;
+        $expected = 10;
         $actual = $this->calculator->display();
         $this->assertEquals($expected, $actual);
     }

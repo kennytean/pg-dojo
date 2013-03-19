@@ -14,8 +14,7 @@ class Calculator
 		return $this->val;
 	}
 
-	public function addition($val){
+	public function addition($val) {
 		$this->val += $val;
-		return $this->val;
 	}
 }
